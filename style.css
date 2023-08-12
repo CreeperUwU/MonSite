@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'lunaregular';
+    src: url('./fonts/luna-webfont.woff2') format('woff2'),
+         url('./fonts/luna-webfont.woff') format('woff'),
+         url('./fonts/luna.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1{
+	color: black;
+	font-size: 24px;
+	font-family:'Lunaregular' ;
+}
+
+h2{
+	color: black;
+	font-family: 'Lobster', cursive;
+}
+
+h3{
+	color: black;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	transition: ease 1s;
+	padding: 20px
+}
+a:hover{
+	color: red;
+}
+#hero{
+	background: url('./fond.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 1%;
+}
+nav{
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	padding: 20px;
+}
+#bandeau{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	background-color: rgba(255, 255, 255, 0.5);
+
+}
+#contenu{
+	text-align: center;
+	padding: 2%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+#contenu a{
+	color: red;
+	border: 1px solid red;
+	border-radius: 15px;
+	padding: 20px;
+	transition: ease 1s;
+}
+
+#contenu a:hover{
+	color: white;
+	background-color: rgba(178, 32, 19, 0.8);
+
+}
+
+#contenu img:hover{
+	transform: rotate(360deg) scale(1.5)
+}
+#contenu img{
+	transition: 0.5s;
+}
+html{
+	font-family: 'arial';
+	font-size: 16px;
+}
+
+#apropos{
+	display: flex;
+}
+#apropos_image{
+	flex: 1;
+	padding: 20px;
+}
+#apropos_texte{
+	flex: 2;
+	text-align: justify;
+	padding: 20px;
+}
+
+#services{
+	display : flex;
+	background-color: #666;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+.service_item p{
+	text-align: justify;
+	padding: 20px;
+}
+@media screen and (max-width: 414px){
+	#apropos{
+		color: red;
+		flex-direction: column;
+	}/* on referme la déclaration #apropos*/
+	#services{
+		flex-direction: column;
+	}/* on referme la déclaration #services*/
+	nav a{
+		display: block;
+		padding: 10px;
+	}
+}/*on referme la media query*/
